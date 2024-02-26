@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#game{
+    width:400px;
+    height: 800px;
+    background-image: url(images/RSVP-Logo-Black-Vertical.png);
+    background-position: center;
+    opacity: 58%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: whitesmoke;
+    margin: auto;
+    margin-top: 2px;
+    overflow: hidden;
+}
+
+#character{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-image: url(images/RSVP-Logo-Black-Circle.png);
+    background-position: center;
+    background-size: 55px, 55px;
+    background-color: rgba(216, 127, 18, 0.989);
+    position: relative;
+    top: 700px;
+    left: 225px;
+    z-index: 1000000px;
+}
+
+/* #score{
+    width: 55px;
+    height: 40px;
+    position: static;
+    background-color: rgba(233, 38, 58, 0.357);
+} */
+
+#points{
+    display: flex;
+    text-align: left;
+    font: bolder;
+}
+
+/* #test {
+    box-sizing: border-box;
+    width: 100vmin;
+    height: 115vmin;
+    border: 5px solid #f00;
+} */
+
+.block{
+    width: 400px;
+    height: 50px;
+    background-color: rgba(252, 6, 6, 0.685);
+    position: relative;
+    top: 750px;
+    margin-top: -50px;
+    z-index: -1000000;
+}
+.hole{
+    width: 80px;
+    height: 50px;
+    background-color: whitesmoke;
+    position: relative;
+    top: 750px;
+    left: 80px;
+    margin-top: -50px;
+    z-index: -1000000;
+}
