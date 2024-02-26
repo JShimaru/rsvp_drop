@@ -77,6 +77,9 @@ const game = document.getElementById("game");
                         })
 
             //direct copy
+function Play(){
+        let button = document.getElementById("start");
+        button.style.display = "none";
 
             var blocks = setInterval(function(){
                 var blockLast = document.getElementById("block"+(counter-1));
@@ -142,8 +145,12 @@ const game = document.getElementById("game");
                 }
 
             },1);
-
-            //Hard-coding blocks
+        }    
+        
+        
+        
+        
+        //Hard-coding blocks
 
         
 

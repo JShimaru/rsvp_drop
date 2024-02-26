@@ -69,3 +69,15 @@
     margin-top: -50px;
     z-index: -1000000;
 }
+
+#start{
+    width: 75px;
+    height: 40px;
+    top: 350px;
+    left: 160px;
+    z-index: 2000000;
+    box-shadow: inset;
+    border-width: 4px;
+    border-color: rgb(11, 11, 70);
+    position: relative;
+}
