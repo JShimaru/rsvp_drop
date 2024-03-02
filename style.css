@@ -20,10 +20,12 @@
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    background-image: url(images/RSVP-Logo-Black-Circle.png);
+    border-style: groove;
+    background-image: url(images/disco\ buddy.jpeg);
     background-position: center;
     background-size: 55px, 55px;
     background-color: rgba(216, 127, 18, 0.989);
+    background-blend-mode: hard-light;
     position: relative;
     top: 700px;
     left: 225px;
@@ -39,7 +41,8 @@
 
 #points{
     display: flex;
-    text-align: left;
+    flex-direction: row-reverse;
+    text-align: right;
     font: bolder;
 }
 

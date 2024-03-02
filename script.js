@@ -1,6 +1,7 @@
 let interval;
 //let box;
 let both = 0;
+//let speed = 3;
 let drop = 0;
 let counter = 0;
 let currentBlocks = [];
@@ -60,24 +61,34 @@ const game = document.getElementById("game");
                         })
 
                         document.addEventListener("touchstart", e=>{
-                            e.preventDefault()
-                            let spot = e.touches[0].screenX;
-                            let touch = spot - 1200;
+                            //e.preventDefault()
+                            let touch = e.touches[0].clientX;
+                            //console.log(touch)
+                            let split = screen.availWidth/2;
+                            //console.log(split)
 
-                            if(touch <=200){
+                            if(touch <= split){
                                 interval = setInterval(moveLeft, 1);
                             }else{
                                 interval = setInterval(moveRight, 1);
                             }
                         })
 
+                    //     $(document).on('contextmenu', e=>{
+                    //     return false;
+                    // })
                         document.addEventListener("touchend", e=>{
+                            
+                            //e.preventDefault()
                             //console.log(e);
                             clearInterval(interval);
                         })
 
             //direct copy
 function Play(){
+
+    alert("Help Disco Dan avoid being squished by moving left and right! Screenshot your high-score and challenge your friends!")
+    
         let button = document.getElementById("start");
         button.style.display = "none";
 
